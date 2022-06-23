@@ -1,0 +1,102 @@
+body {
+  background-image: url("../imgs/background.jpeg");
+  background-size: 100%;
+}
+/* ====== MENU ======= */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(134, 133, 133, 0.961);
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: underline;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(118, 198, 200);
+}
+
+li.dropdown {
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(118, 198, 200);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.logo {
+  display: block;
+  margin: auto;
+}
+/* ====== FIN MENU ======= */
+
+/* ==== INICIO ROPA */
+#galeria,
+#galeria * {
+  box-sizing: border-box;
+}
+#galeria {
+  padding: 10px;
+  padding-bottom: 0;
+  width: 700px; /* Ancho de la galería */
+  position: relative;
+}
+#galeria_miniaturas {
+  width: 100%;
+  display: flex;
+}
+#imgGaleria {
+  border: 3px solid rgba(90, 0, 10, 0.4); /* Borde de la imagen */
+  padding: 3px;
+  width: 360px; /* Ancho de la imagen */
+  height: 400px; /* Alto de la imagen */
+}
+.miniatura {
+  width: 60px; /* Ancho de las miniaturas */
+  height: 60px; /* Alto de las miniaturas */
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px 5px;
+}
+.miniatura:hover {
+  opacity: 0.5; /* Opacidad */
+  background: rgba(90, 0, 10, 0.4);
+}
+.miniatura:active {
+  opacity: 1;
+}
+/* ==== FIN ROPA */
